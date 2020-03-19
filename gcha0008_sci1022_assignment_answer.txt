@@ -29,9 +29,14 @@ total 184
 
 3)
 
-cd ~/Documents/gcha0008_sci1022_assignment_answer/ebooks
+$ cd ~/Documents/gcha0008_sci1022_assignment_answer/ebooks
 
-wc hamlet.txt
+$ wc hamlet.txt
 
   5307  32252 184406 hamlet.txt
+
+4)
+
+$ head -n 3447 ~/Documents/gcha0008_sci1022_assignment_answer/ebooks/hamlet.txt | tail -n 1
+
 
