@@ -26,3 +26,12 @@ total 184
 /usr/lib$ ls -rtl ../../home/gcha0008/Documents/gcha0008_sci1022_assignment_answer/ebooks
 total 184
 -rw-rw-r--+ 1 gcha0008 Domain Users 184406 Mar 18 20:29 hamlet.txt
+
+3)
+
+cd ~/Documents/gcha0008_sci1022_assignment_answer/ebooks
+
+wc hamlet.txt
+
+  5307  32252 184406 hamlet.txt
+
