@@ -1,8 +1,12 @@
 1)
 
+Setting the current working directory to gcha0008_sci1022_assignment_answer we can then create a directory in the current directory
+
 $ cd ~/Documents/gcha0008_sci1022_assignment_answer
 
 $ mkdir ebooks
+
+We can then use curl to get hamlet from the internet
 
 $ curl http://www.gutenberg.org/cache/epub/2265/pg2265.txt -o ebooks/hamlet.txt
 
@@ -10,7 +14,14 @@ $ curl http://www.gutenberg.org/cache/epub/2265/pg2265.txt -o ebooks/hamlet.txt
                                  Dload  Upload   Total   Spent    Left  Speed
 100  180k  100  180k    0     0  82434      0  0:00:02  0:00:02 --:--:-- 82508
 
+$ ls ebooks
+hamlet.txt
+
+And so we have successfully downloaded the Tragedie of Hamlet by William Shakespeare eBook in text format where the file is located at ~/ebooks and is named as hamlet.txt
+
 2)
+
+First setting the current working directory to /usr/lib
 
 $ cd /usr/lib/
 
@@ -27,7 +38,11 @@ total 184
 total 184
 -rw-rw-r--+ 1 gcha0008 Domain Users 184406 Mar 18 20:29 hamlet.txt
 
+And thus we obtain both size in bytes and the permissions of hamlet.txt through the absolute path and relative path.
+
 3)
+
+Setting the current working directory to ~/Documents/gcha0008_sci1022_assignment_answer/ebooks 
 
 $ cd ~/Documents/gcha0008_sci1022_assignment_answer/ebooks
 
@@ -35,8 +50,22 @@ $ wc hamlet.txt
 
   5307  32252 184406 hamlet.txt
 
+wc can be used to get the lines, words and bytes of hamlet.txt. As can be seen, the bytes of Question 2 and the bytes of Question 3 are both 184406 bytes.
+
 4)
 
+In a single- line command to output line #3447, we use the absolute domain of hamlet.txt in conjuction with head, tail and command pipelining.
+
 $ head -n 3447 ~/Documents/gcha0008_sci1022_assignment_answer/ebooks/hamlet.txt | tail -n 1
+Is thought-sicke at the act
 
+So we find that Is thought-sicke at the act is line #3447 in hamlet.txt.
 
+5)
+
+Grep can be used with the flag -i so that we have case-insensitive matching. wc with flag -l will display the number of lines containing hamlet and/or Hamlet when used with command pipelining.
+
+$ grep -i hamlet ~/Documents/gcha0008_sci1022_assignment_answer/ebooks/hamlet.txt | wc -l
+109 
+
+And so 109 lines have hamlet and/or Hamlet.
